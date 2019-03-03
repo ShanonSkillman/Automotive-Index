@@ -24,3 +24,5 @@ CREATE DATABASE indexed_cars OWNER indexed_cars_user;
 \i scripts/car_model_data.sql;
 \c indexed_cars;
 \i scripts/car_model_data.sql;
+
+SELECT count(*) FROM car_models;
