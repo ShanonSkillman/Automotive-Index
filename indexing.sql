@@ -22,3 +22,15 @@ SELECT DISTINCT model_title FROM car_models WHERE make_code = 'NISSAN' AND model
 SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code ='LAM';
 SELECT count(*) FROM car_models WHERE year <= 2015 AND year >= 2010;
 SELECT count(*) FROM car_models WHERE year = 2010;
+
+CREATE INDEX makeCode ON car_models (make_code);
+CREATE INDEX modelCode ON car_models (model_code);
+CREATE INDEX modelTitle ON car_models (model_title);
+CREATE INDEX year ON car_models (year);
+SELECT DISTINCT make_title FROM car_models WHERE make_code = 'LAM';
+SELECT DISTINCT model_title FROM car_models WHERE make_code = 'NISSAN' AND model_code = 'GT-R';
+SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code ='LAM';
+SELECT count(*) FROM car_models WHERE year <= 2015 AND year >= 2010;
+SELECT count(*) FROM car_models WHERE year = 2010;
+SELECT count(*) FROM car_models;
+DROP DATABASE IF EXISTS car_models;
