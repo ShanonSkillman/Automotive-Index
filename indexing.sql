@@ -44,3 +44,4 @@ DROP DATABASE IF EXISTS car_models;
 --  model_title character varying(125) NOT NULL,
 --  year integer NOT NULL,
 --  PRIMARY KEY (id)
+ 
